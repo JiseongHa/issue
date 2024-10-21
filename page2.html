@@ -5,21 +5,123 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style>
-		div.container {width: 100vw; text-align: center;background-color: darkblue;}
-		div.phone { display: inline-block; border: 20px solid black; width: 60vh; height: 90vh; border-radius: 20px;background-color: white; text-align: left}
-		div.ban {width:60vh; height: 300px; background-image: url("ban.png"); background-size: contain; background-repeat: no-repeat;}
+		body{
+			overflow: hidden;
+		}
+		div.container {
+			width: 100vw; 
+			text-align: center;
+			background-color: rgba(24, 12, 66);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			overflow-x: hidden;
+		}
+		div.title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: white;
+			width: 500px;
+		}
+		div.phone { 
+			display: inline-block; 
+			border: 20px solid black; 
+			width: 60vh; height: 90vh; 
+			border-radius: 20px;
+			background-color: transparent; background-image: url('bg.jpg');background-repeat: no-repeat; background-size: cover; background-position: center center;}
+		div.screen{
+			width: 100%;
+			height: 615px;
+			padding: 0px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+
+		}
+		div.screen img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+		div.screen::-webkit-scrollbar {
+  			width: 0px;
+		}
+		div.news{
+			padding: 0px 10px;
+			width: 97.8%; height: 140px;
+			display: flex;
+			background-color: white;
+			align-items: top;
+		}
+		div.news-content{
+			width: 340px;
+			text-align: left;
+		}
+		div.news-content img{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+		}
+		a.news-title{
+			color: rgb(67 65 177);
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			text-align: left;
+			font-size: 13px; font-weight: bold;
+			text-decoration: none;
+		}
+		p.news-sub-title, p.news-date{
+			margin: 5px 0px;
+			padding: 0px;
+			width: 100%;
+			text-align: left;
+			font-size: 9px; 
+		}
+		p.news-name{
+			display: inline-block;
+			margin: 5px 0px;
+			padding: 0px;
+			text-align: left;
+			font-size: 7px; font-weight: bold; 
+		}
+		div.news-image{
+			width: 60px;
+			height: 60px;
+			margin-top: 20px;
+		}
+		div.news-image img{
+			border-radius: 5px;
+			margin-left: 23px;
+		}
 		div.lowpart {background-color: black; width: 100%; height: 10% ; text-align: center;}
 		a.home {display: inline-block;width: 30px; height: 30px; border: 2px solid white; border-radius: 50%;background-color: black; margin: 0 auto}
 	</style>
 </head>
 <body>
 	<div class = "container">
+		<div class = "title">
+			<h1>After many problems of SNS was raised, people tried to prohibit SNS.<br/><br/><br/>Australia actually proposed to ban children from social media.<h4>Click the first news to get specific infromation.</h4></h1>
+
+		</div>
 		<div class = "phone">
-			<h4>Australia Proposing to Ban Children From Social Media, Joins Wave of Asian Government Crackdowns on Platforms</h2>
-			<h6>The Australian federal government said Tuesday that it will introduce legislation this year that bans children from accessing social media. The exact age has yet to be determined.<br/><br/>
-			The plan, announced by Prime Minister Anthony Albanese, aligns with moves by other governments around the Asia-Pacific region seeking to rein in online media and social media, in particular.<br/><br/>
-			Many in the region are concerned that social media platforms are causing addictive behavior, enabling bullying, gambling and facilitating cybercrimes. Albanese called the impact of social media on young people a “scourge.”<br/><br/>
-			</h6>
+			<div class="screen">
+				<div class='news'>
+					<div class='news-content'>
+						<img src='variety.png' alt='variety icon'>
+						<p class='news-name'>Variety</p><br/>
+						<a href="https://variety.com/2024/digital/news/australia-ban-children-social-media-1236139196/" class='news-title' target="_blank">Australia Proposing to Ban Children From Social Media, Joins Wave of Asian Government Crackdowns on Platforms</a>
+						<p class ='news-sub-title'>The Australian federal government said Tuesday that it will introduce legislation this year that bans children from accessing social media.</p>
+						<p class ='news-date'>1 month ago</p>
+						
+					</div>
+					<div class="news-image">
+  						<img src="man.jpg" alt="Google Screen">
+					</div>
+				</div>
+  				<img src="google_screen.jpeg" alt="Google Screen">
+			</div>
 			<div class = "ban"></div>
 			<div class="lowpart">
 				<a class = "home" href = "page3.html"></a>

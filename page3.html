@@ -5,15 +5,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style>
-		div.container {width: 100vw; text-align: center;background-color: darkblue;}
-		div.phone { display: inline-block; border: 20px solid black; width: 60vh; height: 90vh; border-radius: 20px;background-color: transparent; background-image: url('bg.jpg');background-repeat: no-repeat; background-size: cover; background-position: center center;}
-		div.message {background-color: white; border-radius: 10px; width: 80%;  margin: 30px auto 0; color: red; font-size: 35px}
-		a {display: inline-block; width: 50px; height: 50px; background-size: cover; border-radius: 15px; margin-top: 250px; margin-left: 20px}
+		div.container {
+			width: 100vw; 
+			text-align: center;
+			background-color: rgba(24, 12, 66);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;}
+		div.title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: white;
+			width: 500px;
+		}
+		div.phone { 
+			display: inline-block; 
+			border: 20px solid black; 
+			width: 60vh; height: 90vh; 
+			border-radius: 20px;
+			background-color: transparent; background-image: url('bg.jpg');background-repeat: no-repeat; background-size: cover; background-position: center center;}
+		div.screen{
+			width: 100%;
+			height: 615px;
+			padding: 0px;
+			overflow-y: hidden;
+			overflow-x: hidden;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		a{
+			width: 50px;
+			height: 50px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 10px;
+		}
 		a.call { background-image: url("call.jpg");  }
 		a.news { background-image: url("news.png");  }
 		a.insta { background-image: url("insta.jpg");  }
 		a.x { background-image: url("x.png");  }
-		div.lowpart {background-color: black; width: 100%; height: 10% ; text-align: center;margin-top: 300px;}
+		div.lowpart {background-color: black; width: 100%; height: 10% ; text-align: center;}
 		a.home {display: inline-block;width: 30px; height: 30px; border: 2px solid white; border-radius: 50%;background-color: black; margin: 0 auto}
 
 
@@ -21,12 +54,17 @@
 </head>
 <body>
 	<div class = "container">
+		<div class = "title">
+			<h1>Should SNS be banned?<br/><br/><br/><h4>Click any SNS to know what it feels like to be banned from SNS</h4></h1>
+
+		</div>
 		<div class = "phone">
-			<a class ="call" ></a>
-			<a class ="news" href="page2.html"></a>
-			<a class = "insta" href = 'page4.html'></a>
-			<a class = "x" href = "page4.html"></a>
-			<div class = "ban"></div>
+			<div class="screen">
+				<a class ="call" ></a>
+				<a class ="news" href="page2.html"></a>
+				<a class = "insta" href = 'page4.html'></a>
+				<a class = "x" href = "page4.html"></a>
+			</div>
 			<div class="lowpart">
 				<a class = "home"></a>
 			</div>
