@@ -5,33 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style>
-		div.container {
-			width: 100vw; 
-			text-align: center;
-			background-color: rgba(24, 12, 66);
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;}
-		div.title {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			color: white;
-			width: 500px;
+		body {
+			margin: 0px;
+			padding: 0px;
 		}
-		div.phone { 
-			display: inline-block; 
+		div.container {
+			height: 800px;
+			background-color: rgba(24, 12, 66); background-attachment: fixed;
+			display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+			overflow-x: scroll;
+			}
+		div.title {
+			flex-shrink: 0;
+			display: flex;
+			flex-direction: column; 
+			align-items: flex-start;
+			color: white;
+			width: 680px;
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		div.phone {
+			flex-shrink: 0; 
+			display: inline-block;
+			display: flex; 
+			flex-direction: column;
+			justify-content: space-between;
 			border: 20px solid black; 
-			width: 60vh; height: 90vh; 
+			width: 400px; height: 600px; 
 			border-radius: 20px;
+			margin-right: 100px;
 			background-color: transparent; background-image: url('bg.jpg');background-repeat: no-repeat; background-size: cover; background-position: center center;}
 		div.screen{
-			width: 100%;
-			height: 615px;
+			width: 100%; height: 100%;
+			background-image: url(fbi.jpg); background-size: cover; background-repeat: no-repeat;
 			padding: 0px;
-			overflow-y: hidden;
+			overflow-y: scroll;
 			overflow-x: hidden;
-			background-image: url("fbi.jpg"); background-size: cover;
+
+		}
+		div.screen::-webkit-scrollbar {
+  			width: 0px;
 		}
 		div.lowpart {background-color: black; width: 100%; height: 10% ; text-align: center;}
 		a.home {display: inline-block;width: 30px; height: 30px; border: 2px solid white; border-radius: 50%;background-color: black; margin: 0 auto}

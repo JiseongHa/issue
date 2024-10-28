@@ -5,28 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+		}
 		div.container {
-			width: 100vw; 
-			text-align: center;
-			background-color: rgba(24, 12, 66);
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;}
+			height: 800px;
+			background-color: rgba(24, 12, 66); background-attachment: fixed;
+			display: flex; flex-direction: row; justify-content: space-around; align-items: center;
+			overflow-x: scroll;
+			}
 		div.title {
-			display: flex;
+			flex-shrink: 0;
+			display: flex; 
 			align-items: center;
 			color: white;
 			width: 380px;
+			margin: 0px 100px;
 		}
-		div.phone { 
-			display: inline-block; 
+		div.phone {
+			flex-shrink: 0; 
+			display: inline-block;
+			display: flex; 
+			flex-direction: column;
+			justify-content: space-between;
 			border: 20px solid black; 
-			width: 60vh; height: 90vh; 
+			width: 400px; height: 600px; 
 			border-radius: 20px;
 			background-color: transparent; background-image: url('bg.jpg');background-repeat: no-repeat; background-size: cover; background-position: center center;}
 		div.screen{
-			width: 100%;
-			height: 615px;
+			width: 100%; height: 500px;
 			padding: 0px;
 			overflow-y: hidden;
 			overflow-x: hidden;
@@ -63,18 +71,26 @@
 		div.message-content p.content{
 			font-size: 10px; font-weight: bold;
 			margin: 0px;
+			margin-right: 15px;
+		}
+		div.app {
+			display: flex;
+			justify-content: space-around;
 		}
 		a {
 			display: inline-block; 
 			width: 50px; height: 50px; 
 			background-size: cover; 
 			border-radius: 15px; 
-			margin-top: 25vh; margin-left: 20px}
+			margin-top: 25vh; }
 		a.call { background-image: url("call.jpg");  }
 		a.news { background-image: url("news.png");  }
 		a.insta { background-image: url("insta.jpg");  }
 		a.x { background-image: url("x.png");  }
-		div.lowpart {background-color: black; width: 100%; height: 10% ; text-align: center;}
+		div.lowpart {
+			background-color: black; 
+			width: 100%; height: 40px ; 
+			text-align: center;}
 		a.home {display: inline-block;width: 30px; height: 30px; border: 2px solid white; border-radius: 50%;background-color: black; margin: 0 auto}
 
 
@@ -96,11 +112,12 @@
 						<p class="content">The Australian federal government said Tuesday that it will introduce legislation this year that bans children from accessing social media.</p>
 					</div>
 				</div>
-				<a class ="call" ></a>
-				<a class ="news" href="page2.html"></a>
-				<a class = "insta" href = "https://www.instagram.com"></a>
-				<a class = "x" href = "https://www.x.com"></a>
-				<div class = "ban"></div>
+				<div class="app">
+					<a class ="call" ></a>
+					<a class ="news" href="page2.html"></a>
+					<a class = "insta" href = "https://www.instagram.com"></a>
+					<a class = "x" href = "https://www.x.com"></a>
+				</div>
 			</div>
 			<div class="lowpart">
 				<a class = "home" ></a>
